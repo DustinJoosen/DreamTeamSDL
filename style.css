@@ -10,12 +10,16 @@
 
 body {
     background: linear-gradient(30deg, #fde482, #ac9cfe);
+    background-size: 100%;
+    min-height: 100vh;
+    overflow-y: hidden;
 }
 
 .pictures {
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding-top: 10px;
 }
 .picture {
     width: 220px;
@@ -27,15 +31,7 @@ body {
     overflow: hidden;
 }
 
-@media (max-width: 800px) {
-    .pictures {
-        flex-direction: column;
-    }
-    .picture {
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
+
 
 .picture p {
     padding-left: 5px;
@@ -67,20 +63,38 @@ img {
 
 .text {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.ps,
-.ts
+.ps, .ts
 {
     width: 30%;
-    margin-left: auto;
-    margin-right: auto;
 }
-
 .ps {
     padding-top: 20px;
 }
 .ts {
     padding-bottom: 20px;
+}
+
+
+@media (max-width: 800px) {
+    .pictures {
+        flex-direction: column;
+    }
+    .picture {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body {
+        overflow-y: scroll;
+    }
+    .text {
+        flex-direction: column;
+    }
+    .ps, .ts {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
