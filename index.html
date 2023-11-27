@@ -25,12 +25,12 @@
             </p>
 	    <p>
 		<button>
-		    <a target="_blank" href="mailto:dkll.groep@gmail.com">Send us an email!</a>
+		    <a target="_blank" href="mailto:dkll.groep@gmail.com">Stuur ons een email!</a>
 		</button>
 	    </p>
         </div>
         <div class="pictures">
-            <div class="picture">
+            <div class="picture" onclick="goTo('Dustin')">
                 <div class="picture-img">
                     <img src="lib/dustin.jpeg" alt="Image of Dustin Joosen">
                 </div>
@@ -40,7 +40,7 @@
                     <a href="https://linkedin.com/in/dustin-joosen/" target="_blank">Linkedin</a>
                 </p>
             </div>
-            <div class="picture">
+            <div class="picture" onclick="goTo('Laurens')">
                 <div class="picture-img">
                     <img src="lib/laurens.jpeg" alt="Image of Laurens van Minnen">
                 </div>
@@ -50,7 +50,7 @@
                     <a href="https://linkedin.com/in/laurens-van-minnen/" target="_blank">Linkedin</a>
                 </p>            
             </div>
-            <div class="picture">
+            <div class="picture" onclick="goTo('Koen')">
                 <div class="picture-img">
                     <img src="lib/koen.jpeg" alt="Image of Koen van der Hoeven">
                 </div>
@@ -60,7 +60,7 @@
                     <a href="https://linkedin.com/in/koen-van-der-hoeven/" target="_blank">Linkedin</a>
                 </p>            
             </div>
-            <div class="picture">
+            <div class="picture" onclick="goTo('Lars')">
                 <div class="picture-img">
                     <img src="lib/lars.jpeg" alt="Image of Lars Tovar">
                 </div>
@@ -100,5 +100,10 @@
                 </ul>
             </div>
         </div>
+        <script>
+            let goTo = (person) => {
+                alert(person);
+            }
+        </script>
     </body>
 </html>
